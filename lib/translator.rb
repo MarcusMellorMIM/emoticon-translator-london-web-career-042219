@@ -23,8 +23,6 @@ def load_library( file_path )
       return_hash["get_meaning"][jap_emot]=k
     end
   
-  puts return_hash
-  
   return_hash
 
 end
