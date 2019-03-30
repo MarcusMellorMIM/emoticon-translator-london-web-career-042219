@@ -22,7 +22,8 @@ def load_library( file_path )
     jap_emot=emoticons[k][1]
     puts jap_emot
     return_hash["get_emotion"][uk_emot]=jap_emot
-    return_has["get_meaning"][jap_emot]=k        
+    return_has["get_meaning"][jap_emot]=k
+    puts "added to return hash"  
   end
   
   return_hash
