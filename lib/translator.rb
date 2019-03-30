@@ -18,7 +18,9 @@ def load_library( file_path )
     puts v
     #assuming key is meaning, 0 is emoticon and 1 is japanese in an array
     uk_emot=emoticons[k][0]
+    puts uk_emot
     jap_emot=emoticons[k][1]
+    puts jap_emot
     return_hash["get_emotion"][uk_emot]=jap_emot
     return_has["get_meaning"][jap_emot]=k        
   end
