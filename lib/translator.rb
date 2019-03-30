@@ -6,7 +6,7 @@ def load_library( file_path )
   require "yaml"
   
   return_hash={
-    "get_emotion" => {},
+    "get_emoticon" => {},
     "get_meaning" => {}
   }
   
@@ -19,7 +19,7 @@ def load_library( file_path )
     #assuming key is meaning, 0 is emoticon and 1 is japanese in an array
       uk_emot=emoticons[k][0]
       jap_emot=emoticons[k][1]
-      return_hash["get_emotion"][uk_emot]=jap_emot
+      return_hash["get_emoticon"][uk_emot]=jap_emot
       return_hash["get_meaning"][jap_emot]=k
     end
   
