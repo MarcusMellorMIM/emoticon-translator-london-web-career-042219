@@ -14,7 +14,7 @@ def load_library( file_path )
 
 
   emoticons.each do | k, v|
-    puts k
+    puts k[0]
     #assuming key is meaning, 0 is emoticon and 1 is japanese in an array
     uk_emot=emoticons[k][0]
     jap_emot=emoticons[k][1]
