@@ -30,13 +30,20 @@ end
 def get_japanese_emoticon( file_path, emoticon )
   # code goes here
   emot_hash=load_library( file_path )
-  jap_emot=emot_hash["get_emoticon"][emoticon]
-  jap_emot
+  if emot_hash["get_emoticon"][emoticon]
+    return_v=emot_hash["get_emoticon"][emoticon]
+  else
+    return_v=""
+  end
+  return_v
 end
 
 def get_english_meaning( file_path, emoticon )
   # code goes here
   emot_hash=load_library( file_path )
-  emot_meaning=emot_hash["get_meaning"][emoticon]
-  emot_meaning
+  if emot_hash["get_meaning"][emoticon]
+      
+  else
+  end
+  return_v
 end
