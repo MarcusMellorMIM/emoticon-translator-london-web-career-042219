@@ -9,8 +9,12 @@ def load_library( file_path )
     "get_meaning" => {}
   }
   
-  emoticons=YAML.load_file(file_path)
+  puts file_path
+  
+  emoticons=YAML.load_file( file_path )
 
+  puts emoticons
+  
   emoticons.each do | k, v|
     #assuming key is meaning, 0 is emoticon and 1 is japanese in an array
     uk_emot=emoticons[k][0]
