@@ -3,7 +3,7 @@ require "yaml"
 
 def load_library( file_path )
   # code goes here
-  require "yaml"
+  #require "yaml"
   
   return_hash={
     "get_emoticon" => {},
