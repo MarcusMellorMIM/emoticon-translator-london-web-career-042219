@@ -27,10 +27,16 @@ def load_library( file_path )
 
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon( file_path, emoticon )
   # code goes here
+  emot_hash=load_library( file_path )
+  jap_emot=emot_hash["get_emoticon"][emoticon]
+  jap_emot
 end
 
-def get_english_meaning
+def get_english_meaning( file_path, emoticon )
   # code goes here
+  emot_hash=load_library( file_path )
+  emot_meaning=emot_hash["get_meaning"][emoticon]
+  emot_meaning
 end
